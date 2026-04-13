@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Takbeer News Composer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Jameel Noori Nastaleeq -->
+    <link href='https://humayunxhan.github.io/Jameelnoori/stylesheet.css' rel='stylesheet' type='text/css' crossorigin="anonymous"/>
+    <!-- Urdu Najd -->
+    <style>
+      @font-face {
+        font-family: 'Urdu Najd V3';
+        src: url('https://fazatravel.github.io/UrduNajd-font/UrduNajd.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Urdu Najd V3';
+        src: url('https://fazatravel.github.io/UrduNajd-font/UrduNajd.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Urdu Najd V3';
+        src: url('https://fazatravel.github.io/UrduNajd-font/UrduNajd.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* Hidden elements to force font loading */
+      .font-preload { opacity: 0; position: absolute; pointer-events: none; z-index: -1; }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-100 text-gray-800 h-screen overflow-hidden">
+    <div id="root" class="h-full"></div>
+    <!-- Preload fonts to ensure Canvas can access them -->
+    <div class="font-preload" style="font-family: 'Noto Nastaliq Urdu'; font-weight: 400;">بسم الله</div>
+    <div class="font-preload" style="font-family: 'Noto Nastaliq Urdu'; font-weight: 700;">بسم الله</div>
+    <div class="font-preload" style="font-family: 'Noto Sans Arabic'; font-weight: 400;">بسم الله</div>
+    <div class="font-preload" style="font-family: 'Noto Sans Arabic'; font-weight: 700;">بسم الله</div>
+    <!-- Note: Family names must match what is defined in the external CSS files -->
+    <div class="font-preload" style="font-family: 'Urdu Najd V3'; font-weight: 400;">بسم الله</div>
+    <div class="font-preload" style="font-family: 'Urdu Najd V3'; font-weight: 700;">بسم الله</div>
+    <div class="font-preload" style="font-family: 'Urdu Najd V3'; font-weight: 900;">بسم الله</div>
+    <div class="font-preload" style="font-family: 'Jameel Noori Nastaleeq'">بسم الله</div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
